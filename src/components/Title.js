@@ -1,5 +1,6 @@
 import React from 'react';
-    const Title = (props) => {
-        return <h1>{props.intro}</h1>
+import './Title.css';
+    const Title =({intro,titleStyle})=> {
+        return <h1 className={titleStyle}>{intro}</h1>
     };
 export default Title;

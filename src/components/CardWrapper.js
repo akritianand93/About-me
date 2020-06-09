@@ -9,22 +9,27 @@ import ImageComp from './ImageComp.js';
 
 
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
+const useStyles=makeStyles({
+  image: {
+    maxWidth: 300,
+    display: "inline",
+    marginRight: "1rem",
+    marginLeft: "1rem",
   },
-  media: {
-    height: 140,
-  },
+  wrapper :{
+      display: "inline",
+      backgroundColor: "transparent",
+      boxShadow: "none",
+  }
 });
 
 export default function MediaCard({image,title,caption,description}) {
-  const classes = useStyles();
+  const classes=useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <ImageComp src = {image}/>
+    <Card className={classes.wrapper}>
+      <CardActionArea className={classes.image}>
+        <ImageComp src={image}/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {caption}
@@ -34,19 +39,6 @@ export default function MediaCard({image,title,caption,description}) {
           </Typography>
         </CardContent>
       </CardActionArea>
-
-      <CardActionArea>
-              <ImageComp src = {image}/>
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  {caption}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  {description}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-
     </Card>
   );
 }

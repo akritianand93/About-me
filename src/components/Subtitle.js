@@ -1,5 +1,7 @@
+
 import React from 'react';
-    const Subtitle = (props) => {
-        return <h2>{props.desc}</h2>
+import './Title.css';
+    const Subtitle =({desc,subtitleStyle})=> {
+        return <h2 className={subtitleStyle}>{desc}</h2>
     };
 export default Subtitle;

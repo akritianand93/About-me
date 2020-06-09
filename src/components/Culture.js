@@ -6,15 +6,25 @@ import Holi from "./../Images/Holi.jpg";
 
 
 
-const IntroPage = () => {
+const IntroPage=()=> {
     return(
         <div>
-            <Title intro = "Culture"/>
+            <Title intro="Culture" titleStyle="fontStyle"/>
             <CardWrapper
-                image = {Holi}
+                image={Holi}
                 title='Holi the festival of colors'
                 caption='Holi the festival of colors'
                 description="Something about Holi"/>
+            <CardWrapper
+                image={Holi}
+                title='Holi the festival of colors'
+                caption='Holi the festival of colors'
+                description="Something about Holi"/>
+             <CardWrapper
+                 image={Holi}
+                 title='Holi the festival of colors'
+                 caption='Holi the festival of colors'
+                 description="Something about Holi"/>
         </div>
     )};
 export default IntroPage;
