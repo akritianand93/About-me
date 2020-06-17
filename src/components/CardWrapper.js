@@ -16,7 +16,7 @@ const useStyles=makeStyles({
     marginRight: "1rem",
     marginLeft: "1rem",
   },
-  wrapper :{
+  wrapper_abc :{
       display: "inline",
       backgroundColor: "transparent",
       boxShadow: "none",
@@ -27,7 +27,7 @@ export default function MediaCard({image,title,caption,description}) {
   const classes=useStyles();
 
   return (
-    <Card className={classes.wrapper}>
+    <Card className={classes.wrapper_abc}>
       <CardActionArea className={classes.image}>
         <ImageComp src={image}/>
         <CardContent>

@@ -1,15 +1,15 @@
 import React from 'react';
 import Title from './Title.js';
-import Subtitle from './Subtitle.js';
+import './Introduction.css';
 
-const IntroPage=()=> {
+const IntroPage=({imageStyles,quotePosition,quote,quoteStyle,children})=> {
     return(
-        <div className="introduction" >
-            <Title
-                intro="Hi, I'm Akriti" titleStyle="fontStyle"/>
-            <Subtitle
-                desc="I am a foodie and love to travel. I respect cultures around the world"
-                subtitleStyle="subtitleFontStyle"/>
+        <div className={imageStyles} >
+        {children}
+            <div className={quotePosition}>
+                <Title title={quote} titleStyle={quoteStyle}/>
+            </div>
         </div>
     )};
 export default IntroPage;
+

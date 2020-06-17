@@ -1,10 +1,11 @@
 .arrow {
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 6px 6px 0;
   display: inline-block;
-  padding: 6px;
+  padding: 10px;
   position: absolute;
-  top:50%
+  top:50%;
+  margin:10px;
 
 }
 
@@ -19,4 +20,13 @@
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   left: 10px;
+}
+
+.arrow:hover {
+   border: solid black;
+   border-width: 0 6px 6px 0;
+   display: inline-block;
+   padding: 10px;
+   position: absolute;
+   top:50%
 }

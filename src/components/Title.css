@@ -1,6 +1,27 @@
-.fontStyle{
-    color: #5D001E;
+.quote{
+    font-family:cursive
 }
-.subtitleFontStyle{
-    color: #E3AFBC;
+
+.intro_title{
+    font-weight: bold;
+    font-size: xxx-large;
+    color: black;
+}
+
+.travel_title{
+    font-weight: bold;
+    font-size: xxx-large;
+    color: black;
+}
+
+.food_title{
+    font-weight: bold;
+    font-size: xxx-large;
+    color: black;
+}
+
+.culture_title{
+    font-weight: bold;
+    font-size: xxx-large;
+    color: black;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Title.css';
-    const Title =({intro,titleStyle})=> {
-        return <h1 className={titleStyle}>{intro}</h1>
+    const Title =({title,titleStyle})=> {
+        return <div className={titleStyle}>{title}</div>
     };
 export default Title;
